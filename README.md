@@ -3,24 +3,30 @@ Create Laravel development environment with Docker.
 
 ## Usage
 
-### Case...Laravel not installed
+### If Laravel has not installed yet
 1. Run the following command.
 
-```bash
-make create-project
+```shell
+$ git clone git@github.com:ap-gun/laravel_base_in_docker.git
+$ cd laravel_base_in_docker
+$ make create-project
 ```
 
-2. http://localhost:80
+### If Laravel has already installed
+1. Run the following command.
 
-### Case...Laravel already installed
-1. Move Laravel src code to `backend` directory in this project.
-2. Run the following command.
+```shell
+$ git clone git@github.com:ap-gun/laravel_base_in_docker.git
+$ cd laravel_base_in_docker
 
-```bash
-make create-except-laravel
+# Move Laravel src code in your project to `backend` directory in this project.
+# ex. mv ~/laravel-src ./backend
+
+$ make create-except-laravel
 ```
 
-3. http://localhost:80
+http://localhost:80
+
 
 ## Tips
 
